@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 800px;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+header {
+    padding: 8px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+}
