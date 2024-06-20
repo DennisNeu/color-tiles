@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     max-width: 800px;
+    height: 100%;
     margin: auto;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -29,4 +32,12 @@ header {
     width: 200px;
     height: 200px;
     border: solid 1px black;
+}
+
+footer {
+    margin-top: auto;
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding: 8px;
 }
