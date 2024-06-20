@@ -1,7 +1,7 @@
 const container = document.querySelector(".main-container");
 
 function getRandomColor() {
-    const colors =  ["blue", "red", "green", "yellow", "tomato", "pink", "black", "purple", "brown", "blueviolet", "chartreuse", "cyan", "crimson", "darkblue", "darkmagenta", "darkred", "deeppink"];
+    const colors =  ["blue", "red", "green", "yellow", "tomato", "pink", "black", "purple", "brown", "blueviolet", "chartreuse", "cyan", "crimson", "darkblue", "darkmagenta", "darkred", "deeppink", "aquamarine", "darkorchid", "fuchsia", "gold"];
     const randomNumber = Math.round(Math.random() * (colors.length - 1));
     console.log(randomNumber);
     return colors[randomNumber];
