@@ -16,10 +16,23 @@ html, body {
 
 h1 {
     text-align: center;
+    font-size: 4rem;
 }
 
 header {
     padding: 8px;
+}
+
+.controls {
+    margin: 4px 0 4px 0;
+    padding: 8px;
+    background-color: grey;
+    font-size: larger;
+    border: black solid 1px;
+}
+
+.controls p {
+    display: inline;
 }
 
 .main-container {

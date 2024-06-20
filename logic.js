@@ -16,11 +16,24 @@ function changeColor() {
     this.style.backgroundColor = newColor;
 }
 
-for (i = 0; i < 10; i++) {
-    const div = document.createElement("div");
-    div.classList.add("tile");
-    div.style.backgroundColor = getRandomColor();
-    div.addEventListener("click", changeColor);
+function generateTiles(tilesNumber) {
+    if (isNaN(tilesNumber)) {
+        alert("Please enter a postive number!");
+        return;
+    }
+    if (tilesNumber < 0) {
+        alert("Please enter a postive number!");
+        return;
+    }
 
-    container.appendChild(div);
+    for (i = 0; i < tilesNumber; i++) {
+        const div = document.createElement("div");
+        div.classList.add("tile");
+        div.style.backgroundColor = getRandomColor();
+        div.addEventListener("click", changeColor);
+    
+        container.appendChild(div);
+    } 
 }
+
+generateTiles(12);
