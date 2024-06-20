@@ -7,10 +7,15 @@ function getRandomColor() {
     return colors[randomNumber];
 }
 
+function changeColor() {
+    this.style.backgroundColor = getRandomColor();
+}
+
 for (i = 0; i < 10; i++) {
     const div = document.createElement("div");
     div.classList.add("tile");
     div.style.backgroundColor = getRandomColor();
+    div.addEventListener("click", changeColor);
 
     container.appendChild(div);
 }
