@@ -26,7 +26,7 @@ header {
 .controls {
     margin: 4px 0 4px 0;
     padding: 8px;
-    background-color: grey;
+    background-color: seashell;
     font-size: larger;
     border: black solid 1px;
     width: 800px;
@@ -34,6 +34,14 @@ header {
 
 .controls p {
     display: inline;
+}
+
+.controls button {
+    font-size: large;
+}
+
+.controls input {
+    font-size: large;
 }
 
 .main-container {
@@ -46,6 +54,8 @@ header {
     width: 200px;
     height: 200px;
     border: solid 1px black;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 footer {
