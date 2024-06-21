@@ -1,4 +1,11 @@
 const container = document.querySelector(".main-container");
+const button = document.querySelector("#regen");
+const input = document.querySelector("#tiles-number");
+
+button.addEventListener("click", function() {
+    const tilesNumber = input.value;
+    generateTiles(tilesNumber);
+});
 
 function getRandomColor() {
     const colors =  ["blue", "red", "green", "yellow", "tomato", "pink", "black", "purple", "brown", "blueviolet", "chartreuse", "cyan", "crimson", "darkblue", "darkmagenta", "darkred", "deeppink", "aquamarine", "darkorchid", "fuchsia", "gold"];
