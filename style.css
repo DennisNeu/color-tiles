@@ -29,6 +29,7 @@ header {
     background-color: grey;
     font-size: larger;
     border: black solid 1px;
+    width: 800px;
 }
 
 .controls p {

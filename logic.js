@@ -4,6 +4,7 @@ const input = document.querySelector("#tiles-number");
 
 button.addEventListener("click", function() {
     const tilesNumber = input.value;
+    deleteTiles();
     generateTiles(tilesNumber);
 });
 
@@ -41,6 +42,14 @@ function generateTiles(tilesNumber) {
     
         container.appendChild(div);
     } 
+}
+
+function deleteTiles() {
+    const tiles = document.querySelectorAll(".tile");
+
+    tiles.forEach(tile => {
+        container.removeChild(tile);
+    });
 }
 
 generateTiles(12);
