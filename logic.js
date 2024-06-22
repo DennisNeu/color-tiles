@@ -9,7 +9,17 @@ button.addEventListener("click", function() {
 });
 
 function getRandomColor() {
-    const colors =  ["blue", "red", "green", "yellow", "tomato", "pink", "black", "purple", "brown", "blueviolet", "chartreuse", "cyan", "crimson", "darkblue", "darkmagenta", "darkred", "deeppink", "aquamarine", "darkorchid", "fuchsia", "gold"];
+    const colors = [
+        "blue", "red", "green", "yellow", "tomato", "pink", "black", "purple", "blueviolet",
+        "chartreuse", "cyan", "crimson", "darkblue", "darkmagenta", "darkred", "deeppink", "aquamarine",
+        "darkorchid", "fuchsia", "gold", "coral", "khaki", "lavender", "lightcoral", "lightcyan", 
+        "lightgreen", "lightsalmon", "lightseagreen", "lightskyblue", "lightpink", "lime", "magenta", 
+        "mediumblue", "mediumorchid", "mediumseagreen", "mediumslateblue", "mediumspringgreen", 
+        "mediumturquoise", "midnightblue", "navy", "orange", "orangered", "orchid", "palevioletred", 
+        "peachpuff", "powderblue", "royalblue", "salmon", "skyblue", "slateblue", "springgreen", 
+        "steelblue", "teal", "thistle", "turquoise", "violet", "yellowgreen"
+    ];
+    
     const randomNumber = Math.round(Math.random() * (colors.length - 1));
     console.log(randomNumber);
     return colors[randomNumber];
